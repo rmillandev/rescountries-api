@@ -14,7 +14,7 @@ Este proyecto se hizo con el objetivo de proporcionar una interfaz de usuario f√
 **1 forma**. Dar clic en Code y luego en Donwload Zip
 **2 forma.** Crear una carpeta, ingresar a git bash y ejecutar
 
-    git clone https://github.com/Ronald-Proyectos/api-rescontries.git
+    git clone https://github.com/rmillandev/rescountries-api.git
 ### 2 Paso
 - En tu VS Code busca la extension Live Server e inst√°lala.
 - En el index.html dar click derecho y buscar la opcion **Open With Live Server** y hacer click.
