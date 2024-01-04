@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Countries API</title>
+</head>
+<body>
+    
+    <header class="header">
+        <div class="box__flex container">
+            <h1 class="header__title">Where in the world?</h1>
+            <div class="header__box-mode">
+                <i class="fa-solid fa-moon"></i>
+                <span>Dark Mode</span>
+            </div>
+        </div>
+    </header>
+
+    <section class="box__search-filter">
+        <div class="box__flex container">
+            <div class="box__search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" class="input-search" placeholder="Search for a country...">
+            </div>
+            <div class="box__filter">
+                <p>Filter by Region</p>
+                <i class="fa-solid fa-chevron-down"></i>
+                <div class="regions">
+                    <p class="filter-all">All</p>
+                    <p class="filter-region">Africa</p>
+                    <p class="filter-region">America</p>
+                    <p class="filter-region">Asia</p>
+                    <p class="filter-region">Europe</p>
+                    <p class="filter-region">Oceania</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main class="main">
+        <div class="card__grid container"></div>
+    </main>
+
+    <section class="information-country"></section>
+
+    <button class="scroll-top hidden"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <template id="template">
+        <article class="card">
+            <img class="bandera">
+            <h4 class="pais"></h4>
+            <div class="caracteristicas">
+                <div>
+                    <p class="poblacion">Population:</p>
+                    <span class="res-poblacion"></span>
+                </div>
+                <div>
+                    <p class="region">Region:</p>
+                    <span class="res-region"></span>
+                </div>
+                <div>
+                    <p class="capital">Capital:</p>
+                    <span class="res-capital"></span>
+                </div>
+            </div>
+        </article>
+    </template>
+
+    <template id="template2">
+        <article class="country__box container">
+            <button class="btnBack"><i class="fa-solid fa-arrow-left"></i>Back</button>
+            <div class="information-box-country">
+                <figure class="country__flag">
+                    <img>
+                </figure>
+                <div class="country__box-characteristics">
+                    <h3 class="country__title"></h3>
+                    <div class="characteristics">
+                        <div>
+                            <div>
+                                <p class="native-name">Native Name:</p>
+                                <span class="res-native-name"></span>
+                            </div> 
+                            <div>
+                                <p class="population">Population:</p>
+                                <span class="res-population"></span>
+                            </div> 
+                            <div>
+                                <p class="region">Region:</p>
+                                <span class="res-region"></span>
+                            </div> 
+                            <div>
+                                <p class="subregion">Sub Region:</p>
+                                <span class="res-subregion"></span>
+                            </div> 
+                            <div>
+                                <p class="capital">Capital:</p>
+                                <span class="res-capital"></span>
+                            </div> 
+                        </div>
+                        <div>
+                            <div>
+                                <p class="domain">Top Level Domain:</p>
+                                <span class="res-domain"></span>
+                            </div> 
+                            <div>
+                                <p class="currencies">Currencies:</p>
+                                <span class="res-currencies"></span>
+                            </div> 
+                            <div>
+                                <p class="languages">Languages:</p>
+                                <span class="res-languages"></span>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="country__box-border">
+                        <p>Border Countries:</p>
+                        <div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </template>
+
+    <script src="js/code.js"></script>
+</body>
+</html>
